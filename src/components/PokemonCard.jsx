@@ -6,7 +6,7 @@ export default function PokemonCard({
    pokemonImage, 
    pokemonIndex, 
    pokemonName,
-   handleClick
+   handleClick,
 }) {
    return (
       <div className="cardContainer" onClick={handleClick} style={{backgroundColor: color}}>

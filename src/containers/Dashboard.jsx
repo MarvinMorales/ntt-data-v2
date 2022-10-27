@@ -1,5 +1,5 @@
 import { useCallback, useState, useEffect } from "react";
-import { FiChevronLeft, FiChevronRight, FiSearch } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import PokemonCard from "../components/PokemonCard";
 import PokemonSelectedCard from "../components/PokemonSelectedCard";
 import configuration from "../configuration/configuration.json";
@@ -109,7 +109,7 @@ export default function Dashboard() {
                      return (
                         <PokemonCard 
                            key={index}
-                           // onClick={handleSelect(item?.name, pokeIndex, pokeImage)}
+                           handleClick={() => handleSelect(item?.name, pokeIndex, pokeImage)}
                            pokemonImage={pokeImage} 
                            pokemonIndex={pokeIndex} 
                            pokemonName={item?.name} 
