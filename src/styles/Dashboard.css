@@ -1,0 +1,184 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   margin: auto;
+}
+
+.title-col {
+   display: flex;
+   width: 100%;
+   margin: 15px 0;
+   justify-content: center;
+}
+
+.title {
+   width: 100%;
+   line-height: 40px;
+   text-align: center;
+}
+
+.searchContiner {
+   display: flex;
+}
+
+.inputSearch {
+   width: 50%;
+   outline-color: rgb(170, 170, 170);
+   padding: 10px 15px;
+}
+
+.searchBox {
+   width: 60px;
+   border: none;
+   background-color: rgb(26, 142, 243);
+}
+
+.spritesCont {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.sprites {
+   width: 40px;
+   height: 40px;
+   margin-right: 5px;
+   background-color: white;
+   overflow: hidden;
+   border-radius: 50%;
+   border: 1px solid rgb(145, 145, 145);
+}
+
+.spriteImg {
+   width: 100%;
+   height: 100%;
+}
+
+.searchLen {
+   font-size: 20px;
+   color: white;
+}
+
+.cards-col {
+   display: flex;
+   height: auto;
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
+
+.itemsSection {
+   display: flex;
+   flex: 1;
+   gap: 15px;
+   flex-wrap: wrap;
+}
+
+.selectedContainer {
+   display: flex;
+   flex: 1;
+   min-width: 350px;
+   justify-content: right;
+   background-color: white;
+   flex-wrap: wrap;
+}
+
+.selectedPokemon {
+   width: 75%;
+   height: 100%;
+   padding: 20px;
+   border: 4px solid rgba(53, 53, 53, 0.4);
+   background-color: rgb(211, 177, 255);
+}
+
+.selectedImageContainer {
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   margin-bottom: 10px;
+   align-items: center;
+   width: 100%;
+   height: 170px;
+}
+
+.selectedImg {
+   width: auto;
+   height: 100%;
+}
+
+.titles-items {
+   margin-top: 10px;
+}
+
+.buttons-col {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.buttons {
+   border: none;
+   width: 180px;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   padding: 15px 0;
+   background-color: rgb(43, 117, 255);
+}
+
+.buttons:disabled {
+   background-color: rgb(134, 177, 255);
+}
+
+.buttons p { 
+   display: flex;
+   line-height: 5px;
+   align-items: center;
+}
+
+.icons {
+   font-size: 20px;
+}
+
+.r {
+   margin-left: 5px;
+}
+
+.l {
+   margin-right: 5px;
+}
+
+@media only screen and (max-width: 478px) {
+   .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+   }
+
+   .title-col {
+      display: flex;
+      width: 100%;
+      margin: 15px 0;
+      justify-content: center;
+   }
+   
+   .title {
+      width: 100%;
+      line-height: 40px;
+      text-align: center;
+   }
+   
+   .searchContiner {
+      display: flex;
+   }
+   
+   .inputSearch {
+      width: 50%;
+      outline-color: rgb(170, 170, 170);
+      padding: 10px 15px;
+   }
+ }

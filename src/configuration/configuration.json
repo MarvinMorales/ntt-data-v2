@@ -1,0 +1,10 @@
+{
+   "environment": "development",
+   "apiService": "https://pokeapi.co/api/v2",
+   "imagesRoute": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{index}.png",
+   "endpoints": {
+      "getPokemonList": "/pokemon",
+      "getPokemonByName": "/pokemon/{name}",
+      "getPokemonByPagination": "/pokemon?limit={limit}&offset={offset}"
+   }
+}

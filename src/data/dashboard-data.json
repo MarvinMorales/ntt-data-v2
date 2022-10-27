@@ -1,0 +1,13 @@
+{
+   "title": "Listado de Pokemon",
+   "inputName": "name",
+   "nextButton": "Siguiente",
+   "backButton": "Regresar",
+   "inputPlaceHolder": "Buscar...",
+   "colors": [
+      "rgba(0, 204, 255, 0.5)", 
+      "rgba(245, 191, 90, 0.7)", 
+      "rgba(245, 121, 90, 0.7)", 
+      "rgba(170, 170, 170, 0.5)"
+   ]
+}
