@@ -36,16 +36,13 @@ export default function Dashboard() {
       setTextState({...textState, [name]: value});
    }, [textState, setTextState]);
 
-   const handleDataFetched = useCallback((data) => {
-      setTextState({...textState, data});
-   }, [textState, setTextState]);
-
    const handleSelect = useCallback((name, index, image) => {
       _getPokemonByName(name)
       .then(({ data }) => {
          setPokemonSelected({
             name, index, image,
-            weight: data.weight,
+            sprites: data?.sprites,
+            weight: data?.weight,
             type: data?.types?.type?.name,
          });
       }).catch((err) => console.error(err));
@@ -53,8 +50,9 @@ export default function Dashboard() {
 
    const handlePrev = useCallback(() => {
       const { limit, offset } = pagination;
-      fetchData(limit, offset);
-      setPagination({...pagination, offset: offset - offsetNum});
+      console.log(offset)
+      fetchData(limit, offset - offsetNum);
+      setPagination({...pagination, offset: offset});
    }, [pagination, fetchData]);
 
    const handleNext = useCallback(() => {
